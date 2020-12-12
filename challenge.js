@@ -72,6 +72,7 @@ if(DSAverage > KSAverage && DSAverage >= 100 ){
 
 // tip : 15% bill value 50~300 , else tip : 20% 
 const bill =  40;
-const tip1 = bill * (15/100);
-const tip2 = bill * (20/100);
+//const tip1 = bill * (15/100);
+//const tip2 = bill * (20/100);
+const tip = bill <= 300 && bill >=50 ? bill * (15/100):bill * (20/100); // it is better setence!
 bill >= 50  && bill <= 300  ? console.log('the bill was' + bill +'the tip was ' + tip1 + 'and total value' + (bill + tip1)) : console.log('the bill was' + bill +'the tip was ' + tip2 + 'and total value' + (bill + tip2));
