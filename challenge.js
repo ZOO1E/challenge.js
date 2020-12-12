@@ -33,7 +33,7 @@ if (MBMI > JBMI){
 */
 
 //Challenge#3
-Data1
+//Data1
 const DophinScoreAverage = (96 + 108 + 89)/3;
 const KoalasScoreAverage = (88 + 91 + 110)/3;
 console.log(DophinScoreAverage);
@@ -57,7 +57,7 @@ const KSA3 = 106;
 
 const DSAverage = (DSA1 + DSA2 + DSA3)/3;
 const KSAverage = (KSA1 + KSA2 + KSA3)/3;
-console.log(DSAverag ,  KSAverage)
+console.log(DSAverage ,  KSAverage)
 
 if(DSAverage > KSAverage && DSAverage >= 100 ){
     console.log('Dophins win!!');
@@ -69,3 +69,9 @@ if(DSAverage > KSAverage && DSAverage >= 100 ){
     console.log('No one win ㅜㅜ ^^');
 } 
 // !!! finish #3 I won!
+
+// tip : 15% bill value 50~300 , else tip : 20% 
+const bill =  40;
+const tip1 = bill * (15/100);
+const tip2 = bill * (20/100);
+bill >= 50  && bill <= 300  ? console.log('the bill was' + bill +'the tip was ' + tip1 + 'and total value' + (bill + tip1)) : console.log('the bill was' + bill +'the tip was ' + tip2 + 'and total value' + (bill + tip2));
