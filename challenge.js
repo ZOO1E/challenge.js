@@ -4,6 +4,7 @@
 // const MarkMass = '78';
 // const MarkHeight = '1.69';
 
+/*
 const JohnMass = '85';
 const JohnHeight = '1.76';
 
@@ -29,3 +30,42 @@ if (MBMI > JBMI){
 }else{
     console.log( "Johns" +JBMI+ " is higher than Mark's!"+ MBMI);
 }
+*/
+
+//Challenge#3
+Data1
+const DophinScoreAverage = (96 + 108 + 89)/3;
+const KoalasScoreAverage = (88 + 91 + 110)/3;
+console.log(DophinScoreAverage);
+console.log(KoalasScoreAverage);
+if(DophinScoreAverage > KoalasScoreAverage ){
+    console.log('congratuation~!! , Dophins win!!')
+} else if (DophinScoreAverage === KoalasScoreAverage){
+    console.log('Amazing ! neck and neck!!')
+}
+else{
+    console.log('congratuation~!! , Koalas wins!!')
+}
+
+const DSA1 = 97;
+const DSA2 = 112;
+const DSA3 = 101;
+
+const KSA1 = 109;
+const KSA2 = 95;
+const KSA3 = 106;
+
+const DSAverage = (DSA1 + DSA2 + DSA3)/3;
+const KSAverage = (KSA1 + KSA2 + KSA3)/3;
+console.log(DSAverag ,  KSAverage)
+
+if(DSAverage > KSAverage && DSAverage >= 100 ){
+    console.log('Dophins win!!');
+}else if (DSAverage < KSAverage && KSAverage >= 100 ){
+    console.log('Koala win!!');
+}else if(DSAverage === KSAverage && (KSAverage && DSAverage) >=100){
+    console.log('both win!! ^^');
+} else {
+    console.log('No one win ㅜㅜ ^^');
+} 
+// !!! finish #3 I won!
