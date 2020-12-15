@@ -30,7 +30,6 @@ if (MBMI > JBMI){
 }else{
     console.log( "Johns" +JBMI+ " is higher than Mark's!"+ MBMI);
 }
-*/
 
 //Challenge#3
 //Data1
@@ -76,3 +75,20 @@ const bill =  40;
 //const tip2 = bill * (20/100);
 const tip = bill <= 300 && bill >=50 ? bill * (15/100):bill * (20/100); // it is better setence!
 bill >= 50  && bill <= 300  ? console.log('the bill was' + bill +'the tip was ' + tip1 + 'and total value' + (bill + tip1)) : console.log('the bill was' + bill +'the tip was ' + tip2 + 'and total value' + (bill + tip2));
+*/
+
+//challenge 1 (function)
+const calcAverage = (a,b ,c) => (a + b + c)/3;
+const DSA = calcAverage(85,54,41);
+const KSA = calcAverage(23,34,27);
+function checkWinner(DSA, KSA){
+    if (DSA >= KSA*2){
+        console.log('Dophins win!'+ '(' +DSA +'vs'+KSA +')');
+    }else if (DSA*2 <= KSA){
+        console.log('Koalas win!'+'(' +DSA +'vs'+KSA +')')
+    }else{
+        console.log('no one win');
+    }
+} 
+checkWinner(DSA ,KSA);
+//clear!!!!!!!
