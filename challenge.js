@@ -75,7 +75,7 @@ const bill =  40;
 //const tip2 = bill * (20/100);
 const tip = bill <= 300 && bill >=50 ? bill * (15/100):bill * (20/100); // it is better setence!
 bill >= 50  && bill <= 300  ? console.log('the bill was' + bill +'the tip was ' + tip1 + 'and total value' + (bill + tip1)) : console.log('the bill was' + bill +'the tip was ' + tip2 + 'and total value' + (bill + tip2));
-*/
+
 
 //challenge 1 (function)
 const calcAverage = (a,b ,c) => (a + b + c)/3;
@@ -91,4 +91,22 @@ function checkWinner(DSA, KSA){
     }
 } 
 checkWinner(DSA ,KSA);
-//clear!!!!!!!
+//clear!!!!!!!*/
+
+//challenge 2 Array
+
+const calcTip = function(bill){
+   if(bill <= 300 && bill >=50 ){
+    return Tip = bill * (15/100);
+}else{
+    return Tip = bill * (20/100)
+}
+}
+const bill = 100;
+console.log(calcTip(bill));
+
+const bills =[125,555,44];
+const tips =[calcTip(bills[0]) ,calcTip(bills[1]),calcTip(bills[2])];
+console.log(tips);
+const total = [bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2]];
+console.log(total);
