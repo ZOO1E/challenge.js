@@ -91,7 +91,7 @@ function checkWinner(DSA, KSA){
     }
 } 
 checkWinner(DSA ,KSA);
-//clear!!!!!!!*/
+//clear!!!!!!!
 
 //challenge 2 Array
 
@@ -110,3 +110,38 @@ const tips =[calcTip(bills[0]) ,calcTip(bills[1]),calcTip(bills[2])];
 console.log(tips);
 const total = [bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2]];
 console.log(total);
+*/
+
+//Challenge #3 
+const MBmiFactors = {
+    name : 'Marks',
+    mass : 78,
+    height: 1.69 ,
+    
+    calcBMI : function() {
+       return  this.mass / this.height ** 2 , 
+        this.mass / (this.height * this.height)
+    }
+    
+}
+const JBmiFactors ={
+    name : 'John',
+    mass : 92 ,
+    height :1.95,
+
+    calcBMI : function() {
+        return  this.mass / this.height ** 2 , 
+        this.mass / (this.height * this.height)
+     }
+     
+}
+
+console.log(MBmiFactors.calcBMI() , JBmiFactors.calcBMI());
+    if(MBmiFactors.calcBMI() > JBmiFactors.calcBMI() ){
+        console.log('Marks BMI is higher than Marks')
+    }else if (MBmiFactors.calcBMI() < JBmiFactors.calcBMI()){
+        console.log('Johns is higher than Marks')
+    }else{
+        console.log('J&M bmi is same !')
+    }
+
