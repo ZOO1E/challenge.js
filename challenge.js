@@ -110,7 +110,7 @@ const tips =[calcTip(bills[0]) ,calcTip(bills[1]),calcTip(bills[2])];
 console.log(tips);
 const total = [bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2]];
 console.log(total);
-*/
+
 
 //Challenge #3 
 const MBmiFactors = {
@@ -145,3 +145,32 @@ console.log(MBmiFactors.calcBMI() , JBmiFactors.calcBMI());
         console.log('J&M bmi is same !')
     }
 
+const bills = [22,295,176,440,37,105,10,1100,86,52];
+const tips = [];
+const totals = [];
+
+const calcTip =function(a){
+    if(a <= 300 && a >=50 ){
+        return  a * (15/100);
+    }else{
+        return  a * (20/100);
+       }
+    
+};
+for(i = 0; i <= bills.length-1 ; i++){
+    console.log(calcTip(bills[i]));
+    tips.push(calcTip(bills[i]));
+    totals.push(bills[i]+calcTip(bills[i]));
+}
+console.log(tips,totals);
+//clear!!! wow awesome ZOO1!*/
+
+
+//Bonus
+ const calcAverage = function(nun){
+    return  
+ }
+const arr = [22,295,176,440,37,105,10,1100,86,52];
+for(let i = 0 ; i <= arr.length-1; i++){
+    console.log(arr[i]);
+}
