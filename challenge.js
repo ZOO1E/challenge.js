@@ -145,6 +145,7 @@ console.log(MBmiFactors.calcBMI() , JBmiFactors.calcBMI());
         console.log('J&M bmi is same !')
     }
 
+    //Challenge #4
 const bills = [22,295,176,440,37,105,10,1100,86,52];
 const tips = [];
 const totals = [];
@@ -154,23 +155,44 @@ const calcTip =function(a){
         return  a * (15/100);
     }else{
         return  a * (20/100);
-       }
-    
+       }   
 };
+
 for(i = 0; i <= bills.length-1 ; i++){
-    console.log(calcTip(bills[i]));
-    tips.push(calcTip(bills[i]));
-    totals.push(bills[i]+calcTip(bills[i]));
+    cosnt tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(bills[i]+tip);
 }
 console.log(tips,totals);
-//clear!!! wow awesome ZOO1!*/
+//clear!!! wow awesome ZOO1!
 
 
 //Bonus
- const calcAverage = function(nun){
-    return  
- }
+// let sum =0;
+//My solution
 const arr = [22,295,176,440,37,105,10,1100,86,52];
+let sum = 0 ;
 for(let i = 0 ; i <= arr.length-1; i++){
     console.log(arr[i]);
+    sum +=  arr[i];
 }
+const calcAverage = function(a){
+    return (a/arr.length);
+}
+
+console.log(calcAverage(sum));
+//i ithink,,,it is more useful how about thing? */
+
+//Jonas
+const calcAverage =function(arr){
+    let sum =0 ;
+    for(let i = 0 ; i <= arr.length-1; i++){
+       
+        sum +=  arr[i];
+    }
+    return (sum/arr.length);
+}
+console.log(calcAverage([2,3,7,56,56,56]));
+// anyway finish fundementals 2! 
+//you are great and you will be better and if you just do it 
+//Absolute quantity don't betray me ...our !
